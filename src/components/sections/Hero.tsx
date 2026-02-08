@@ -274,16 +274,16 @@ const Hero = () => {
                 <div className="absolute bottom-0 left-0 w-12 h-12 border-l-2 border-b-2 border-red-500"></div>
                 <div className="absolute bottom-0 right-0 w-12 h-12 border-r-2 border-b-2 border-red-500"></div>
 
-                <div style={{ aspectRatio: '4 / 3' }}>
-                  <Image
-                    src="/images/pnl.png"
-                    alt="Demir6 Platform"
-                    width={1200}
-                    height={900}
-                    className="w-full h-auto rounded-xl"
-                    priority
-                  />
-                </div>
+                <Image
+                  src="/images/pnl.png"
+                  alt="Demir6 Platform"
+                  width={1200}
+                  height={900}
+                  className="w-full h-auto rounded-xl"
+                  priority
+                  fetchPriority="high"
+                  quality={90}
+                />
 
                 {/* Scan Line */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-red-500/20 to-transparent animate-scan"></div>
