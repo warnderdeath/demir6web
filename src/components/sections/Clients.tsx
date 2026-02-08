@@ -107,6 +107,9 @@ const Clients = () => {
                         fill
                         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 14vw"
                         className="object-contain group-hover:scale-110 transition-transform duration-700"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1ZjVmNSIvPjwvc3ZnPg=="
                       />
                     </div>
 

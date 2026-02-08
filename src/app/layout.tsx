@@ -4,17 +4,22 @@ import "./globals.css";
 import DeveloperSignature from "@/components/DeveloperSignature";
 import Loading from "@/components/Loading";
 import BackgroundParticles from "@/components/BackgroundParticles";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: 'swap',
+  preload: true,
 });
 
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
+  display: 'swap',
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -77,6 +82,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <SchemaMarkup />
+      </head>
       {/*
         ╔═══════════════════════════════════════════════════════════╗
         ║                                                           ║
