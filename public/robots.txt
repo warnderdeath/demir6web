@@ -1,0 +1,20 @@
+# Demir6 - Robots.txt
+# Tüm arama motorlarına izin verilmektedir
+
+User-agent: *
+Allow: /
+
+# Sitemap konumu
+Sitemap: https://demir6.com/sitemap.xml
+
+# Özel kurallar
+# Next.js statik dosyaları
+Allow: /_next/static/
+Allow: /_next/image
+
+# Görsel ve medya dosyaları
+Allow: /images/
+Allow: /icons/
+
+# Crawl hızı ayarı (isteğe bağlı)
+# Crawl-delay: 1
