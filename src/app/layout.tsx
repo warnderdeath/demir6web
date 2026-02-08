@@ -12,6 +12,7 @@ const dmSans = DM_Sans({
   weight: ["400", "500", "600", "700"],
   display: 'swap',
   preload: true,
+  adjustFontFallback: true,
 });
 
 const roboto = Roboto({
@@ -20,6 +21,7 @@ const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
   display: 'swap',
   preload: true,
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {

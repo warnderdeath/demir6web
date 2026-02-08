@@ -266,6 +266,7 @@ const Hero = () => {
                 animate={{ y: [0, -20, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden border border-gray-700/50 p-2"
+                style={{ willChange: 'transform' }}
               >
                 {/* Corner Accents */}
                 <div className="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-red-500"></div>
@@ -273,14 +274,16 @@ const Hero = () => {
                 <div className="absolute bottom-0 left-0 w-12 h-12 border-l-2 border-b-2 border-red-500"></div>
                 <div className="absolute bottom-0 right-0 w-12 h-12 border-r-2 border-b-2 border-red-500"></div>
 
-                <Image
-                  src="/images/pnl.png"
-                  alt="Demir6 Platform"
-                  width={1200}
-                  height={900}
-                  className="w-full h-auto rounded-xl"
-                  priority
-                />
+                <div style={{ aspectRatio: '4 / 3' }}>
+                  <Image
+                    src="/images/pnl.png"
+                    alt="Demir6 Platform"
+                    width={1200}
+                    height={900}
+                    className="w-full h-auto rounded-xl"
+                    priority
+                  />
+                </div>
 
                 {/* Scan Line */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-red-500/20 to-transparent animate-scan"></div>
@@ -291,6 +294,7 @@ const Hero = () => {
                 animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                 className="absolute -left-6 top-1/4 hidden lg:block"
+                style={{ willChange: 'transform' }}
               >
                 <div className="relative">
                   <div className="absolute -inset-0.5 rounded-xl opacity-75"
@@ -315,6 +319,7 @@ const Hero = () => {
                 animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 className="absolute -right-6 bottom-1/4 hidden lg:block"
+                style={{ willChange: 'transform' }}
               >
                 <div className="relative">
                   <div className="absolute -inset-0.5 rounded-xl opacity-75"

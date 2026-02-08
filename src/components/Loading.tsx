@@ -67,7 +67,7 @@ const Loading = () => {
 
               {/* Logo */}
               <div className="relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-red-500/20">
-                <div className="relative w-40 h-20">
+                <div className="relative w-40 h-20" style={{ aspectRatio: '2 / 1' }}>
                   <Image
                     src="/images/11.png"
                     alt="Demir6"

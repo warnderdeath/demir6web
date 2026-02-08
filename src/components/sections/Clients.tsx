@@ -100,13 +100,14 @@ const Clients = () => {
 
                   {/* Logo Container */}
                   <div className="relative aspect-square p-6">
-                    <div className="relative w-full h-full flex items-center justify-center">
+                    <div className="relative w-full h-full flex items-center justify-center" style={{ aspectRatio: '1 / 1' }}>
                       <Image
                         src={client.image}
                         alt={client.name}
                         fill
                         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 14vw"
                         className="object-contain group-hover:scale-110 transition-transform duration-700"
+                        style={{ willChange: 'transform' }}
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2Y1ZjVmNSIvPjwvc3ZnPg=="
