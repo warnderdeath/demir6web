@@ -281,8 +281,7 @@ const Hero = () => {
                   height={900}
                   className="w-full h-auto rounded-xl"
                   priority
-                  fetchPriority="high"
-                  quality={90}
+                  unoptimized
                 />
 
                 {/* Scan Line */}

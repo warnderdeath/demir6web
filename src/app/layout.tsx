@@ -85,13 +85,6 @@ export default function RootLayout({
   return (
     <html lang="tr" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        <link
-          rel="preload"
-          href="/images/pnl.png"
-          as="image"
-          type="image/png"
-          fetchPriority="high"
-        />
         <SchemaMarkup />
       </head>
       {/*
